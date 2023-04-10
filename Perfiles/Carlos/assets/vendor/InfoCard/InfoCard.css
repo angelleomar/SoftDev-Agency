@@ -1,0 +1,17 @@
+ div .contact-info-card {
+    padding-right: 20px;
+  }
+  
+div .contact-title {
+    margin-bottom: 30px;
+  }
+  
+div .contact-title::after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #F85C70;
+    display: block;
+    margin-top: 10px;
+  }
+  
