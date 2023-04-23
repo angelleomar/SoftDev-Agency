@@ -5,913 +5,1206 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LEOMAR- portfolio personal</title>
+  <title>LEOMAR - Portafolio</title>
 
-  <!-- 
+  <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!-- 
+  <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
+  <!--
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body id="top" class="dark_theme">
+<body>
 
-  <!-- 
-    - #HEADER
+  <!--
+    - #MAIN
   -->
 
-  <header class="header" data-header>
-    <div class="container">
+  <main>
 
-      <h1 class="h1 logo">
-        <a href="#">LEOMAR<span>.</span></a>
-      </h1>
+    <!--
+      - #SIDEBAR
+    -->
 
-      <div class="navbar-actions">
+    <aside class="sidebar" data-sidebar>
 
-        <select name="language" id="lang">
-          <option value="en">ES</option>
-        
-        </select>
+      <div class="sidebar-info">
 
-        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
-          <span class="icon"></span>
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">ANGEL LEON</h1>
+
+          <p class="title">Ing Desarrollo De Software</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mostrar contactos</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
         </button>
 
       </div>
 
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-      </button>
+      <div class="sidebar-info_more">
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-          <li>
-            <a href="/index.html" class="navbar-link">Regresar</a>
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="snokert17@hotmail.com" class="contact-link">snokert17@hotmail.com</a>
+            </div>
+
           </li>
 
-          <li>
-            <a href="#home" class="navbar-link">Inicio</a>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Teléfono</p>
+
+              <a href="tel:+529622113136" class="contact-link">+52 962 211 31 36</a>
+            </div>
+
           </li>
 
-          <li>
-            <a href="#about" class="navbar-link">Acerca</a>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Cumpleaños</p>
+
+              <time datetime="2002-06-17">17 de Junio del 2002 </time>
+            </div>
+
           </li>
 
-          <li>
-            <a href="#skills" class="navbar-link">Habilidades</a>
-          </li>
+          <li class="contact-item">
 
-          <li>
-            <a href="#portfolio" class="navbar-link">Portafolio</a>
-          </li>
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
 
-          <li>
-            <a href="#contact" class="navbar-link">Contacto</a>
+            <div class="contact-info">
+              <p class="contact-title">Localización</p>
+
+              <address>Chiapas,México</address>
+            </div>
+
           </li>
 
         </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/angel.leonmar" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/leomar367" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/angel-manuel-leon-martinez-39789a270/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.instagram.com/leomar_manuell/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Acerca de</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resumen</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portafolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Titulos</button>
+          </li>
+
+     
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contacto</button>
+          </li>
+
+        </ul>
+
       </nav>
 
-    </div>
-  </header>
 
 
 
 
-
-  <main>
-    <article class="container">
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-
-        <figure class="hero-banner">
-
-          <picture>
-            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
-            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
-            <img src="./assets/images/hero-banner-sm.png" alt="A man in a blue shirt with a happy expression"
-              class="w-100">
-          </picture>
-
-        </figure>
-
-        <div class="hero-content">
-
-          <h2 class="h2 hero-title">¡Bienvenido Ami Portafolio!</h2>
-
-          <a href="#contact" class="btn btn-primary">contactar</a>
-
-        </div>
-
-        <ul class="hero-social-list">
-
-          <li>
-            <a href="https://www.facebook.com/angel.leonmar" class="hero-social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-
-              <div class="tooltip">Facebook</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://twitter.com/leomar367" class="hero-social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-
-              <div class="tooltip">Twitter</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/angel-manuel-leon-martinez-39789a270/" class="hero-social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-
-              <div class="tooltip">Linkedin</div>
-            </a>
-          </li>
-
-        </ul>
-
-        <a href="#stats" class="scroll-down">LEOMAR</a>
-
-      </section>
-
-
-
-
-
-      <!-- 
-        - #STATS
-      -->
-
-      <section class="stats" id="stats">
-        <ul class="stats-list">
-
-          <li>
-            <a href="#" class="stats-card">
-
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
-              </div>
-
-              <h2 class="h2 card-title">
-                1+ <strong>Años de experiencia</strong>
-              </h2>
-
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="stats-card">
-
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
-              </div>
-
-              <h2 class="h2 card-title">
-                12+ <strong>Proyectos completados</strong>
-              </h2>
-
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="stats-card">
-
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
-              </div>
-
-              <h2 class="h2 card-title">
-                8+ <strong>Clientes Felices</strong>
-              </h2>
-
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-          </li>
-
-        </ul>
-      </section>
-
-
-
-
-
-      <!-- 
+      <!--
         - #ABOUT
       -->
 
-      <section class="about" id="about">
+      <article class="about  active" data-page="acerca de">
 
-        <figure class="about-banner">
-          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
-            class="w-100">
-        </figure>
+        <header>
+          <h2 class="h2 article-title" >Acerca de mi</h2>
+          <a class="h2 article-title" href="/index.html"> Inicio</a>
+        </header>
 
-        <div class="about-content section-content">
-
-          <p class="section-subtitle">Acerca de mí</p>
-
-          <h2 class="h3 section-title">¿Necesita un producto creativo? ¡Puedo ayudarle!</h2>
-
-          <p class="section-text">
+        <section class="about-text">
+          <p>
             Soy Manuel León, un desarrollador apasionado por la creación de aplicaciones web y móviles limpias con funcionalidades intuitivas. Disfruto el proceso de convertir ideas en realidad usando soluciones creativas. Siempre tengo curiosidad por aprender nuevas habilidades, herramientas y conceptos. Además de trabajar en varios proyectos full stack en solitario, he trabajado con equipos creativos, lo que implica stand-ups y comunicaciones diarias, control de fuentes y gestión de proyectos.
-          </p>
-
-          <div class="btn-group">
-            <button class="btn btn-secondary">Contrátarme</button>
-
-            <button class="btn btn-primary">Descargar CV</button>
-          </div>
-
-        </div>
-
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="skills" id="skills">
-
-        <div class="skills-content section-content">
-
-          <p class="section-subtitle">Mis conocimientos</p>
-
-          <h2 class="h3 section-title">¿Qué incluyen mis habilidades de programación?</h2>
-
-          <p class="section-text">
+          
             Desarrollo interfaces de usuario sencillas, intuitivas y con capacidad de respuesta que ayudan a los usuarios a hacer las cosas con menos esfuerzo y tiempo con esas tecnologías.
+          
           </p>
 
-          <div class="skills-toggle" data-toggle-box>
-            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+      
+          <p>
+            Desarrollo interfaces de usuario sencillas, intuitivas y con capacidad de respuesta que ayudan a los usuarios a hacer las cosas con menos esfuerzo y tiempo con esas tecnologías.
+          
+          </p>
+        </section>
 
-            <button class="toggle-btn" data-toggle-btn>Tools</button>
-          </div>
+        <a class="form-btn2" href="/index.html">Mostrar CV</a>
+    
+     
+        <!--
+          - service
+        -->
+        <br
 
-        </div>
+        <section class="service">
 
-        <div class="skills-box" data-skills-box>
+          <h3 class="h3 service-title">¿Necesita un producto creativo?</h3>
 
-          <ul class="skills-list">
+          <ul class="service-list">
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">HTML5</div>
+            <li class="service-item">
 
-                <div class="card-icon">
-                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollador Frontend</h4>
+
+                <p class="service-item-text">
+                  Diseño Web El diseño más moderno y de alta calidad realizado a nivel profesional.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo Backed</h4>
+
+                <p class="service-item-text">
+                Me desarrollo bien en el area de base de datos.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollador Móvil</h4>
+
+                <p class="service-item-text">
+                  Desarrollo profesional de aplicaciones para Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Fotografía</h4>
+
+                <p class="service-item-text">
+                  Hago fotos profesionales como un pasa tiempo.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonios</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel Gomez</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Leon fue contratado para crear una identidad corporativa. Quedamos muy satisfechos con el trabajo realizado. Tiene mucha experiencia y se preocupa mucho por las necesidades del cliente.
                 </div>
+
               </div>
             </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">CSS3</div>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
 
-                <div class="card-icon">
-                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica Franco</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Leon es un programador de software excepcional Me encantó trabajar con él. Desde el principio, comprendió nuestras necesidades y se aseguró de que cada detalle se cumpliera de manera eficiente y efectiva. Además, siempre estuvo disponible para responder cualquier pregunta y proporcionar actualizaciones oportunas. Recomiendo encarecidamente a Manuel a cualquier persona que busque un programador de software de calidad.
+                  </p>
                 </div>
+
               </div>
             </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">JavaScript</div>
 
-                <div class="card-icon">
-                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry Lopez</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Leon es un genio de la programación Él nos ayudó a crear una aplicación increíble que superó todas nuestras expectativas. Lo que más me impresionó fue su capacidad para encontrar soluciones creativas a los desafíos que surgieron en el camino. Él realmente se preocupaba por nuestro proyecto y trabajó incansablemente para asegurarse de que todo estuviera perfecto. ¡No puedo recomendarlo lo suficiente.
+                  </p>
                 </div>
-              </div>
-            </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">TypeScript</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">jQuery</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/jquery.png" alt="jQuery logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Bootstrap</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Angular</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/angular.png" alt="Angular logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">React</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/react.png" alt="React logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Vue</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/vue.png" alt="Vue logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Firebase</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/firebase.png" alt="Firebase logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">PugJs</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">SASS</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/sass.png" alt="SASS logo">
-                </div>
               </div>
             </li>
 
           </ul>
 
-          <ul class="tools-list">
+        </section>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Ajax</div>
 
-                <div class="card-icon">
-                  <img src="./assets/images/ajax.png" alt="Ajax logo">
-                </div>
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel Gomez</h4>
+
+              <time datetime="2023-03-13">Marzo 13, 2023</time>
+
+              <div data-modal-text>
+                <p>
+               
               </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Gulp</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/gulp.png" alt="Gulp logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Webpack</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/webpack.png" alt="Webpack logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Git</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/git.png" alt="Git logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Npm</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/npm.png" alt="Npm logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Command Line</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/command.png" alt="Command Line logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">VS Code</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Trello</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/trello.png" alt="Trello logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">ClickUp</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Slack</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/slack.png" alt="Slack logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Photoshop</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Adobe XD</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
-                </div>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PROJECTS
-      -->
-
-      <section class="project" id="portfolio">
-
-        <ul class="project-list">
-
-          <li>
-            <div class="project-content section-content">
-
-              <p class="section-subtitle">Mis trabajos</p>
-
-              <h2 class="h3 section-title">¡Vea Mis Obras Que Le Sorprenderán!</h2>
-
-              <p class="section-text">
-                Desarrollamos los mejores softwares de calidad que sirve para el largo plazo. Bien documentado, limpio, fácil y interfaz elegante ayuda a cualquier cliente no técnico.
-              </p>
 
             </div>
-          </li>
 
-          <li>
-            <a href="https://github.com/angelleomar/firebloc2" class="project-card">
+          </section>
 
-              <figure class="card-banner">
-                <img src="/images/portfolio-2.jpg" class="w-100" alt="A macintosh on a yellow background.">
-              </figure>
+        </div>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Firebloc</h3>
 
-                <time class="publish-date" datetime="2022-04">Marzo 2023</time>
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clientes</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resumen">
+
+        <header>
+          <h2 class="h2 article-title">Resumen</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidad Politécnica</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Termino la carrera de ingeniería en desarrollo de software.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Metaverso - Platzi</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Recibo una beca por promedio para un curso con título de parte de metaverso-platzi y lo termino.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Udemy - Autodidacta</h4>
+
+              <span>2017 — 2023</span>
+
+              <p class="timeline-text">
+                Estudio por mi parte más de 10 cursos para aprender a programar en: HTML5,CSS, JAVASCRIPT, PYTHON,DJANGO, MYSQL, PHP,JAVA, DART, POSTGRES Y ETC.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Appets</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                Mi equipo gana primer lugar el proyecto final de integradores dominado Appets lo cual el proceso me brinda experiencia
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Estancia 1 y 2</h4>
+
+              <span>2022 — 2022</span>
+
+              <p class="timeline-text">
+                Estancia 1 y 2 en este proceso brindo un servicio total 220 horas a una empresa dividido en dos partes con el propósito de poner aprueba mis conocimientos en los cuales sin problemas logro completar los proyectos asignados.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Experiencia cursos</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                La experiencia que dejo cada curso que tome fue única pues mientras se aprendía se hacía un proyecto que se le enviaba amis profesores online quienes después se encargaría de revisar que mi proyecto estuviera realizado de la manera correcta.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mis habilidades</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML/HMTL5</h5>
+                <data value="90">90%</data>
               </div>
 
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/angelleomar/Appets" class="project-card">
-
-              <figure class="card-banner">
-                <img src="/images/portfolio-3.jpg" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Appets</h3>
-
-                <time class="publish-date" datetime="2022-04">Julio 2022</time>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
 
-            </a>
-          </li>
+            </li>
 
-          <li>
-            <a href="https://github.com/angelleomar/Gestion-Tutoria" class="project-card">
+            <li class="skills-item">
 
-              <figure class="card-banner">
-                <img src="/images/tutoria.jpg" class="w-100"
-                  alt="A Cassette tape on a mellow apricot background.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Gestión Estudiantil</h3>
-
-                <time class="publish-date" datetime="2022-04">Febrero 2023</time>
+              <div class="title-wrapper">
+                <h5 class="h5">CSS/CSS3/REACT</h5>
+                <data value="95">95%</data>
               </div>
 
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="project-card">
-
-              <figure class="card-banner">
-                <img src="./assets/images/project-4.png" class="w-100"
-                  alt="Blue digital watch on a dark liver background.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
               </div>
 
-            </a>
-          </li>
+            </li>
 
-          <li>
-            <a href="#" class="project-card">
+            <li class="skills-item">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-5.png" class="w-100"
-                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+              <div class="title-wrapper">
+                <h5 class="h5">POSTGRES</h5>
+                <data value="75">75%</data>
               </div>
 
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="project-card">
-
-              <figure class="card-banner">
-                <img src="./assets/images/project-6.png" class="w-100"
-                  alt="On a yellow background, a digital watch and a glass.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
               </div>
 
-            </a>
-          </li>
+            </li>
 
-          <li>
-            <a href="#" class="project-card">
+            <li class="skills-item">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-7.png" class="w-100"
-                  alt="A fujifilm instant camera on a dark electric blue background.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+              <div class="title-wrapper">
+                <h5 class="h5">PHP</h5>
+                <data value="70">70%</data>
               </div>
 
-            </a>
-          </li>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
 
-          <li>
-            <button class="load-more">Cargar más trabajos</button>
-          </li>
+            </li>
 
-        </ul>
+            <li class="skills-item">
 
-      </section>
+              <div class="title-wrapper">
+                <h5 class="h5">PYTHON</h5>
+                <data value="78">78%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 78%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JAVA</h5>
+                <data value="82">82%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 82%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">DJANGO</h5>
+                <data value="77">77%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 77%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MYSQL</h5>
+                <data value="79">79%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 79%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
 
 
 
-      <!-- 
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portafolio">
+
+        <header>
+          <h2 class="h2 article-title">Portafolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Todos</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Diseño Web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Aplicaciones</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Desarrollo Web</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Seleccionar categoria</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Todos</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Diseño Web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Aplicaciones</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Desarrollo Web</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="diseño web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Diseño Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicaciones">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="diseño web">
+              <a href="https://github.com/angelleomar/Gestion-Tutoria">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="/images/tutoria.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GESTION-TUTORIA</h3>
+
+                <p class="project-category">Diseño Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="diseño web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Diseño Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="https://github.com/angelleomar/Appets">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio-3.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">APPETS</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicaciones">
+              <a href="https://github.com/angelleomar/firebloc2">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FIREBLOC</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="titulos">
+
+        <header>
+          <h2 class="h2 article-title">Titulos</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+      
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
         - #CONTACT
       -->
 
-      <section class="contact" id="contact">
+      <article class="contact" data-page="contacto">
 
-        <div class="contact-content section-content">
+        <header>
+          <h2 class="h2 article-title">Contacto</h2>
+        </header>
 
-          <p class="section-subtitle">Contacto</p>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61689.13072933405!2d-92.27667465!3d14.905266450000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e0e8830de2017%3A0x3aae41680eadd04e!2sLos%20Naranjos%2C%20Tapachula%2C%20Chis.!5e0!3m2!1sen!2smx!4v1681177302713!5m2!1sen!2smx"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
 
-          <h2 class="h3 section-title">¿Tiene algún proyecto? Envíame mensaje</h2>
+        <section class="contact-form">
 
-          <p class="section-text">
-            Ponte en contacto conmigo y dime cómo puedo ayudarte. Rellene el formulario y me pondré en contacto con usted lo antes posible.
-          </p>
+          <h3 class="h3 form-title">contactar</h3>
 
-          <ul class="contact-list">
-
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Dirección:</h3>
-
-                <address class="contact-info">
-                  Tapachula (Tapachula de Córdova y Ordoñez) Chiapas, México.
-                </address>
-              </div>
-
-            </li>
-
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Teléfono:</h3>
-
-                <a href="tel:01234567789" class="contact-info">+52 962 211 3136</a>
-
-                <a href="tel:09765432200" class="contact-info">+52 962 312 0213</a>
-              </div>
-
-            </li>
-
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Email:</h3>
-
-                <a href="mailto:info@jack.com" class="contact-info">snokert17@hotmail.com</a>
-
-                <a href="mailto:support@jack.com" class="contact-info">snokert1771@gmail.com</a>
-              </div>
-
-            </li>
-
-            <li>
-              <ul class="contac-social-list">
-
-                <li>
-                  <a href="https://www.facebook.com/angel.leonmar" class="contact-social-link">
-                    <div class="tooltip">Facebook</div>
-
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://twitter.com/leomar367" class="contact-social-link">
-                    <div class="tooltip">Twitter</div>
-
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://www.linkedin.com/in/angel-manuel-leon-martinez-39789a270/" class="contact-social-link">
-                    <div class="tooltip">Linkedin</div>
-
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://www.instagram.com/leomar_manuell/" class="contact-social-link">
-                    <div class="tooltip">Instagram</div>
-
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-
-          </ul>
-
-        </div>
-
-        <form action="" class="contact-form">
-
-          <div class="form-wrapper">
-
-            <label for="name" class="form-label">Nombre completo</label>
+          <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nombre completo" required data-form-input>
 
-              <input type="text" name="name" id="name" required placeholder="John Doe" class="input-field">
-
-              <ion-icon name="person-circle"></ion-icon>
-
+              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
             </div>
 
-          </div>
+            <textarea name="message" class="form-input" placeholder="Escribe Mensaje..." required data-form-input></textarea>
 
-          <div class="form-wrapper">
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar Mensaje</span>
+            </button>
 
-            <label for="email" class="form-label">Email</label>
+          </form>
 
-            <div class="input-wrapper">
+        </section>
 
-              <input type="email" name="email" id="email" required placeholder="johndoe@mail.com"
-                class="input-field">
+      </article>
 
-              <ion-icon name="mail"></ion-icon>
+    </div>
 
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="phone" class="form-label">Teléfono</label>
-
-            <div class="input-wrapper">
-
-              <input type="tel" name="phone" id="phone" required placeholder="Número de teléfono" class="input-field">
-
-              <ion-icon name="call"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="message" class="form-label">Mensaje</label>
-
-            <div class="input-wrapper">
-
-              <textarea name="message" id="message" required placeholder="Escribir mensaje ..."
-                class="input-field"></textarea>
-
-              <ion-icon name="chatbubbles"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <button type="submit" class="btn btn-primary">Enviar</button>
-
-        </form>
-
-      </section>
-
-    </article>
   </main>
 
 
 
 
 
-  <!-- 
-    - #FOOTER
-  -->
 
-  <footer class="footer">
-    <div class="container">
-
-      <p class="h1 logo">
-        <a href="#">
-          LEOMAR<span>.</span>
-        </a>
-      </p>
-
-      <p class="copyright">
-        &copy; 2023 <a href="https://softdevagency.000webhostapp.com/">SoftDev Agency</a>. Todos los derechos reservados
-      </p>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="go-top" data-go-top title="Go to Top">
-    <ion-icon name="arrow-up"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
+  <!--
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
+  <!--
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
