@@ -1059,20 +1059,25 @@ main {
   background: var(--eerie-black-1);
   z-index: -1;
 }
-
 .blog-banner-box {
   width: 100%;
-  height: 200px;
+  height: 200px; /* Ajusta la altura según tus necesidades */
   border-radius: 12px;
   overflow: hidden;
+  position: relative; /* Añade esta propiedad para posicionar correctamente el contenido */
 }
 
 .blog-banner-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  
+  object-fit: contain;
   transition: var(--transition-1);
+  position: absolute; /* Añade esta propiedad para posicionar correctamente la imagen */
+  top: 0;
+  left: 0;
 }
+
 
 .blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
 
